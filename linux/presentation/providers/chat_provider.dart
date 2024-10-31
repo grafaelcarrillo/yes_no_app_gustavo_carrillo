@@ -23,10 +23,11 @@ class ChatProvider extends ChangeNotifier{
     moveScrollToBottom();
 
   }
-    //Mover el srooll al último mensaje
-    Future<void> moveScrollToBottom() async{
-      //Un pequeño atraso en la animación para garantizar que siempre se verá aún cuando se envíen mensajes cortos y rápidos
-      await Future.delayed(const Duration(seconds: 1));
-      chatScrollControler.animateTo(chatScrollControler.position.maxScrollExtent, duration: const Duration(microseconds: 300), curve: Curves.easeOut);
-    }
+  //El Future es como una promesa
+  //Mover el srooll al último mensaje
+  Future<void> moveScrollToBottom() async{
+  //Un pequeño atraso en la animación para garantizar que siempre se verá aún cuando se envíen mensajes cortos y rápidos
+  await Future.delayed(const Duration(seconds: 1));
+  chatScrollControler.animateTo(chatScrollControler.position.maxScrollExtent, duration: const Duration(microseconds: 300), curve: Curves.easeOut);
+  }
 }
