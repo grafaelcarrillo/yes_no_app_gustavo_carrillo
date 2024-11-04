@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yes_no_app_gustavo_carrillo/config/theme/app_theme.dart';
 import 'package:yes_no_app_gustavo_carrillo/presentation/screens/chat/chat_screen.dart';
+import 'package:yes_no_app_gustavo_carrillo/presentation/providers/chat_provider.dart';
 
 void main() => runApp(const MyApp());
 
