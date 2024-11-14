@@ -23,11 +23,18 @@ class HerMessageBubble extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 5),
+  
+        // Mostrar la imagen si está presente en el mensaje
         _ImageBubble(imageUrl: message.imageUrl!,),
-        const SizedBox(height: 10)
-        //Todo: imagen
+        const SizedBox(height: 10),
+
+        // Mostrar el timestamp del mensaje
+        Text(message.formattedTimestamp, style: const TextStyle(fontSize: 10, color: Colors.grey)),
+        const SizedBox(height: 10),
       ],
+      
     );
+    
   }
 }
 
@@ -55,5 +62,6 @@ class _ImageBubble extends StatelessWidget {
       },
       )
     );
+    
   }
 }

@@ -37,6 +37,8 @@ class YesNoModel {
     //siempre va a ser de ella
     fromWho: FromWho.hers,
     //será el gif
-    imageUrl: image
+    imageUrl: image,
+    //Agrega la hora actual para el timestamp
+    timestamp: DateTime.now(),
   );
 }
